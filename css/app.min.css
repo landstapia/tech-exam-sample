@@ -7041,8 +7041,7 @@ th {
   padding: 0; }
 div#wrapper {
   min-width: 800px;
-  min-height: 500px;
-  border: 2px solid black; }
+  min-height: 500px; }
 
 div#steps {
   padding: 5px; }
