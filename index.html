@@ -1,0 +1,491 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>HR Calamba</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <script type="text/javascript" src="./js/app.min.js"></script>
+        <script type="text/javascript" src="//cloud.tinymce.com/stable/tinymce.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/app.min.css">
+
+        <script>
+          tinymce.init({selector : "textarea"});
+        </script>
+        
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="wrapper" class="container-fluid">
+          <div id="steps" class="row">
+            <div class="col-md-4 container-fluid" id="container">
+              <div class="row header" id="header">
+                <h3>Join Us!</h3>
+                <p>Register as a Service Provider</p>
+              </div>
+              <hr>
+              <div class="btn btn-block step active row" id="step-1-button">
+                <div class="col-md-2">
+                  <span class="icon glyphicon glyphicon-plane"></span>
+                </div>
+                <div class="col-md-10">
+                  <p class="header">Basic Information</p>
+                  <p class="description">Introduce your company</p>
+                </div>
+              </div>
+              <div class="btn btn-block step disabled row" id="step-2-button">
+                <div class="col-md-2">
+                  <span class="icon glyphicon glyphicon-star"></span>
+                </div>
+                <div class="col-md-10">
+                  <p class="header">Awards</p>
+                  <p class="description">Recognitions to your company</p>
+                </div>
+              </div>
+              <div class="btn btn-block step disabled row" id="step-3-button">
+                <div class="col-md-2">
+                  <span class="icon glyphicon glyphicon-gift"></span>
+                </div>
+                <div class="col-md-10">
+                  <p class="header">Licenses</p>
+                  <p class="description">Permits or licences acquired</p>
+                </div>
+              </div>
+               <div class="btn btn-block step disabled row" id="step-4-button">
+                <div class="col-md-2">
+                  <span class="icon glyphicon glyphicon-wrench"></span>
+                </div>
+                <div class="col-md-10">
+                  <p class="header">Services</p>
+                  <p class="description">What your company has done</p>
+                </div>
+              </div>
+               <div class="btn btn-block step disabled row" id="step-5-button">
+                <div class="col-md-2">
+                  <span class="icon glyphicon glyphicon-flash"></span>
+                </div>
+                <div class="col-md-10">
+                  <p class="header">Agreement</p>
+                  <p class="description">Terms of Use, Privacy Policy and Payment Terms</p>
+                </div>
+              </div>
+               <div class="btn btn-block step disabled row" id="step-6-button">
+                <div class="col-md-2">
+                  <span class="icon glyphicon glyphicon-ok-circle"></span>
+                </div>
+                <div class="col-md-10">
+                  <p class="header">Summary</p>
+                  <p class="description">Review your company information</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7" id="panel">
+              <div class="row" id="panel-headers">
+                <div class="col-md-12 panel-header" id="step-1-panel-header">
+                  <h3>1. Introduce your company</h3>
+                  <p class="orange">Your detailed information will help your potential clients in knowing who you are and what you do.</p>
+                </div>
+                <div class="col-md-12 panel-header hidden" id="step-2-panel-header">
+                  <h3 class="grey">2. Show off your company</h3>
+                  <p class="orange">Recognitions create a positive outlook towards your company. Be sure to include them.</p>
+                </div>
+                <div class="col-md-12 panel-header hidden" id="step-3-panel-header">
+                  <h3 class="grey">3. Your company's credibility</h3>
+                  <p class="orange">Licenses assures your potential clients as this shows your company's credibility</p>
+                </div>
+                <div class="col-md-12 panel-header hidden" id="step-4-panel-header">
+                  <h3 class="grey">4. Your company's project of service history</h3>
+                  <p class="orange">Your potential clients may contact your past clients to verify your services and its quality.</p>
+                </div>
+                <div class="col-md-12 panel-header hidden" id="step-5-panel-header">
+                  <h3 class="grey">5. Our terms and policies</h3>
+                  <p class="orange">Before we complete your registration, you must agree to our terms and policies. Read them carefully.</p>
+                </div>
+                <div class="col-md-12 panel-header hidden" id="step-6-panel-header">
+                  <h3 class="grey">6. Review your information</h3>
+                  <p class="orange">There's no going back, please review your information before you proceed.</p>
+                </div>
+              </div>
+              <div id="panel-contents">
+                <form>
+                  <div id="step-1-panel">
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <label for="company-name">
+                          <span class="icon glyphicon glyphicon-plane"></span>
+                          Name:
+                        </label>
+                        <input id="company-name" type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <label for="company-address">
+                          <span class="icon glyphicon glyphicon-map-marker"></span>
+                          Address:
+                        </label>
+                        <input id="company-address" type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 form-group">
+                        <label for="company-telephone">
+                          <span class="icon glyphicon glyphicon-user"></span>
+                          Telephone Number:
+                        </label>
+                        <input id="company-telephone" type="text" class="form-control">
+                      </div>
+                      <div class="col-md-6 form-group">
+                        <label for="company-email">
+                          <span class="icon glyphicon glyphicon-envelope"></span>
+                          E-mail Address:
+                        </label>
+                        <input id="company-email" type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 form-group">
+                        <label for="company-website">
+                          <span class="icon glyphicon glyphicon-globe"></span>
+                          Website
+                        </label>
+                        <input id="company-website" type="text" class="form-control">
+                      </div>
+                      <div class="col-md-6 form-group">
+                        <label for="company-brn">
+                          <span class="icon glyphicon glyphicon-credit-card"></span>
+                          Business Registration Number:
+                        </label>
+                        <input id="company-brn" type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 form-group">
+                        <label for="company-hours">
+                          <span class="icon glyphicon glyphicon-tag"></span>
+                          Operation Hours:
+                        </label>
+                        <input id="company-hours" type="text" class="form-control">
+                      </div>
+                      <div class="col-md-6 form-group">
+                        <label for="company-category">
+                          <span class="icon glyphicon glyphicon-tag"></span>
+                          Trade Category:
+                        </label>
+                        <input id="company-category" type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <label for="company-description">
+                        <span class="icon glyphicon glyphicon-tag"></span>
+                        Description:
+                      </label>
+                      <textarea class="form-control tinymce-simple" rows="12"required="required" name="company-description" id="company-description">
+                      </textarea>
+                    </div>
+                    <div class="col-md-12">
+                      <br>
+                      <div class="btn btn-block upload grey" id="upload-desc">
+                        <span class="icon glyphicon glyphicon-plus"></span>
+                        <br>
+                        <span>Add Images</span>
+                      </div>
+                    </div>
+                    <div class="col-md-12 text-center grey">
+                      <i>Upload multiple images (jpeg, png, gif) - 5MB Limit</i>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <label for="company-address">
+                          <span class="icon glyphicon glyphicon-tag"></span>
+                          Contact Person:
+                        </label>
+                        <input id="company-address" type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 form-group">
+                        <label for="company-telephone">
+                          <span class="icon glyphicon glyphicon-tag"></span>
+                          Contact Person's Handphone:
+                        </label>
+                        <input id="company-telephone" type="text" class="form-control">
+                      </div>
+                      <div class="col-md-6 form-group">
+                        <label for="company-email">
+                          <span class="icon glyphicon glyphicon-tag"></span>
+                          Contact Person's E-mail:
+                        </label>
+                        <input id="company-email" type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-offset-4 col-md-3 text-center">
+                        <label style>
+                          <span class="icon glyphicon glyphicon-tag"></span>
+                          Company Logo:
+                        </label>
+                        <div class="btn btn-block upload grey" id="upload-desc">
+                          <span class="icon glyphicon glyphicon-plus"></span>
+                          <br>
+                          <span>Add Images</span>
+                        </div>
+                        <div class="col-md-12 text-center grey">
+                          <i>File must be at most 2MB</i>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-md-2 col-md-offset-10">
+                        <div class="btn btn-orange next" id="step-1-next">Next</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="step-2-panel" class="hidden">
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div class="btn btn-block upload grey">
+                          <span class="icon glyphicon glyphicon-plus"></span>
+                          <br>
+                          <span>Add Image</span>
+                        </div>
+                      </div>
+                      <div class="col-md-10 form-group">
+                        <label for="company-name">
+                          <span class="icon glyphicon glyphicon-tag"></span>
+                          Name of the Award:
+                        </label>
+                        <input id="company-name" type="text" class="form-control">
+                        <div class="btn btn-remove">
+                          <span class="icon glyphicon glyphicon-remove"></span> 
+                          Remove
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div class="btn btn-block upload grey">
+                          <span class="icon glyphicon glyphicon-plus"></span>
+                          <br>
+                          <span>Add Image</span>
+                        </div>
+                      </div>
+                      <div class="col-md-10 form-group">
+                        <label for="company-name">
+                          <span class="icon glyphicon glyphicon-tag"></span>
+                          Name of the Award:
+                        </label>
+                        <input id="company-name" type="text" class="form-control">
+                        <div class="btn btn-remove">
+                          <span class="icon glyphicon glyphicon-remove"></span> 
+                          Remove
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-offset-3 col-md-6 text-center">
+                        <div class="btn btn-block btn-add grey">
+                          <span>Add more awards</span>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div class="btn btn-orange back">Back</div>
+                      </div>
+                      <div class="col-md-2 col-md-offset-8">
+                        <div class="btn btn-orange next">Next</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="step-3-panel" class="hidden">
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div class="btn btn-block upload grey">
+                          <span class="icon glyphicon glyphicon-plus"></span>
+                          <br>
+                          <span>Add Image</span>
+                        </div>
+                      </div>
+                      <div class="col-md-10 form-group">
+                        <label for="company-name">
+                          <span class="icon glyphicon glyphicon-tag"></span>
+                          Name of the License:
+                        </label>
+                        <input id="company-name" type="text" class="form-control">
+                        <div class="btn btn-remove">
+                          <span class="icon glyphicon glyphicon-remove"></span> 
+                          Remove
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div class="btn btn-block upload grey">
+                          <span class="icon glyphicon glyphicon-plus"></span>
+                          <br>
+                          <span>Add Image</span>
+                        </div>
+                      </div>
+                      <div class="col-md-10 form-group">
+                        <label for="company-name">
+                          <span class="icon glyphicon glyphicon-tag"></span>
+                          Name of the License:
+                        </label>
+                        <input id="company-name" type="text" class="form-control">
+                        <div class="btn btn-remove">
+                          <span class="icon glyphicon glyphicon-remove"></span> 
+                          Remove
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-offset-3 col-md-6 text-center">
+                        <div class="btn btn-block btn-add grey">
+                          <span>Add more licenses</span>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div class="btn btn-orange back">Back</div>
+                      </div>
+                      <div class="col-md-2 col-md-offset-8">
+                        <div class="btn btn-orange next">Next</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="step-4-panel" class="hidden">
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div class="btn btn-block upload grey">
+                          <span class="icon glyphicon glyphicon-plus"></span>
+                          <br>
+                          <span>Add Image</span>
+                        </div>
+                      </div>
+                      <div class="col-md-10 form-group">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <label for="client-name-1">
+                              <span class="icon glyphicon glyphicon-tag"></span>
+                              Your client:
+                            </label>
+                            <input id="client-name-1" type="text" class="form-control">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <label for="client-work-done-1">
+                              <span class="icon glyphicon glyphicon-tag"></span>
+                              Work done:
+                            </label>
+                            <input id="client-work-done-1" type="text" class="form-control">
+                          </div>
+                        </div>
+                        
+                        <div class="btn btn-remove">
+                          <span class="icon glyphicon glyphicon-remove"></span> 
+                          Remove
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-offset-3 col-md-6 text-center">
+                        <div class="btn btn-block btn-add grey">
+                          <span>Add more projects</span>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div class="btn btn-orange back">Back</div>
+                      </div>
+                      <div class="col-md-2 col-md-offset-8">
+                        <div class="btn btn-orange next">Next</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="step-5-panel" class="hidden">
+                    <i>Insert Terms and Conditions Here</i>
+                    <hr>
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div class="btn btn-orange back">Back</div>
+                      </div>
+                      <div class="col-md-2 col-md-offset-8">
+                        <div class="btn btn-orange next">I Agree</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="step-6-panel" class="hidden">
+                    <i>Insert Summary here</i>
+                    <hr>
+                    <p class="teal"><b>Your company username is: </b><i>yourcompanyhere@company.com</i></p>
+                    <div class="row">
+                      <div class="col-md-6 form-group">
+                        <label for="password">
+                          <span class="icon glyphicon glyphicon-tag"></span>
+                          Your password:
+                        </label>
+                        <input id="password" type="password" class="form-control">
+                      </div>
+                      <div class="col-md-6 form-group">
+                        <label for="referral">
+                          <span class="icon glyphicon glyphicon-tag"></span>
+                          Referral Code (if any):
+                        </label>
+                        <input id="referral" type="text" class="form-control">
+                      </div>
+                    </div>
+                     <div class="row">
+                      <div class="col-md-6 form-group">
+                        <label for="password-retype">
+                          <span class="icon glyphicon glyphicon-tag"></span>
+                          Retype your password
+                        </label>
+                        <input id="password-retype" type="password" class="form-control">
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-md-2 col-md-offset-10">
+                        <div class="btn btn-orange">Register</div>
+                      </div>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
